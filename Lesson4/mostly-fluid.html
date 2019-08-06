@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Mostly Fluid</title>
+			<style type="text/css">
+				
+
+				.container {
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+				}
+
+				.box {
+					height: 100px;
+					width: 100%;
+				}	
+				
+				.dark_blue {
+					background-color: darkblue;
+				}
+				
+				.light_blue {
+					background-color:lightblue;
+				}
+					
+				.green {
+					background-color: green;
+				}
+				
+				.red {
+					background-color: red;
+				}
+				
+				.orange {
+					background: orange;
+				}
+				
+				@media screen and (min-width: 450px) {
+					
+					.light_blue, .green {
+						width: 50%;
+					}
+				}
+				
+				@media screen and (min-width: 550px) {
+					.dark_blue, .light_blue {
+						width: 50%;
+					}
+
+					.green, .red, .orange {
+						width: 33.3333%;
+					}
+					
+				}
+				
+				@media screen and (min-width: 700px) {
+					.container {
+						width: 700px;
+						margin: 0 auto;
+					}
+				}
+
+			</style>
+		</head>
+		<body>
+			<div class="container">
+				<div class="box dark_blue"></div>
+				<div class="box light_blue"></div>
+				<div class="box green"></div>
+				<div class="box red"></div>
+				<div class="box orange"></div>
+			</div>
+		</body>
+	</html>
